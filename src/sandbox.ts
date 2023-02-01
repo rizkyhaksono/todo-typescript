@@ -26,3 +26,8 @@ let isLoggedIn: boolean;
 character = "rizky";
 age = 20;
 isLoggedIn = true;
+console.log(character, age, isLoggedIn);
+
+// arrays
+
+let ninjas: string[] = [];
