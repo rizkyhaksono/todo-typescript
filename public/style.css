@@ -1,72 +1,79 @@
-body{
+body {
     margin: 0;
-    font-family: Roboto; 
-  }
-  .wrapper{
+    font-family: Roboto;
+}
+.wrapper {
     max-width: 960px;
     margin: 0 auto;
-  }
-  h1{
+}
+h1 {
     margin: 40px auto;
-    color: #ff0aa7;
+    color: #0a84ff;
     text-align: center;
-  }
-  ul{
+}
+ul {
     padding: 0;
     list-style-type: none;
-  }
-  li{
+}
+li {
     padding: 6px 10px;
     border: 1px solid #eee;
     margin: 10px auto;
-  }
-  li h4{
-    color: #ff0aa7;
+}
+li h4 {
+    color: #0a84ff;
     margin: 0;
     text-transform: capitalize;
-  }
-  li p{
+}
+li p {
     color: #333;
     margin: 8px 0 0;
-  }
-  footer{
-    background: #eee;
-    padding: 60px;
-    margin-top: 60px;
-  }
-  form{
-    max-width: 960px;
+}
+footer {
+    padding: 20px;
+    /* footer bottom of the screen */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #f5f5f5;
+    border-top: 1px solid #eee;
+}
+
+footer a {
+    text-align: center;
+    display: block;
+    color: #6e869e;
+    text-decoration: none;
+}
+footer a:hover {
+    color: #0a84ff;
+}
+form {
     margin: 0 auto;
     text-align: center;
-  }
-  label{
-    display: block;
+}
+label {
+    display: flex;
     font-weight: bold;
-    font-size: 0.8em;
-    color: #333;
+    font-size: 1em;
+    color: rgb(100, 117, 116);
     margin: 16px 0 6px;
-  }
-  input, select{
+}
+input,
+select {
     padding: 6px;
     border: 1px solid #e1e1e1;
     border-radius: 4px;
-  }
-  .field{
+}
+.field {
     display: inline-block;
-    margin: 0 10px;
-  }
-  button{
+    margin: 0 20px;
+}
+button {
     color: white;
     border: 0;
-    background: #ff0aa7;
-    padding: 6px;
+    background: #0a84ff;
+    padding: 8px;
     min-width: 80px;
-    border-radius: 4px;
-  }
-  footer a{
-    text-align: center;
-    display: block;
-    color: #999;
-    margin-top: 40px;
-    font-size: 0.7em;
-  }
+    border-radius: 10px;
+}
