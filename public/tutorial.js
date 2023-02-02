@@ -1,5 +1,5 @@
 "use strict";
-/// it compile to js file in public folder
+//// it compile to js file in public folder
 // const character = "mario";
 // console.log(character);
 // const inputs = document.querySelectorAll("input");
@@ -13,7 +13,7 @@
 //     age: 30,
 // };
 // ninja.name = "rizky";
-// explicit types
+//// explicit types
 // let character: string;
 // let age: number;
 // let isLoggedIn: boolean;
@@ -21,7 +21,7 @@
 // age = 20;
 // isLoggedIn = true;
 // console.log(character, age, isLoggedIn);
-// arrays
+//// arrays
 // let ninjas: string[] = [];
 // function
 // let salam: Function;
@@ -41,7 +41,7 @@
 // };
 // let result = minus(10, 7);
 // console.log(result);
-// type alias
+//// type alias
 // type StringOrNum = string | number;
 // type objWithName = { name: string; uid: StringOrNum };
 // const logDetails = (uid: StringOrNum, item: string) => {

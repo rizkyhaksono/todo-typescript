@@ -1,4 +1,4 @@
-/// it compile to js file in public folder
+//// it compile to js file in public folder
 
 // const character = "mario";
 
@@ -19,7 +19,7 @@
 
 // ninja.name = "rizky";
 
-// explicit types
+//// explicit types
 
 // let character: string;
 // let age: number;
@@ -30,8 +30,7 @@
 // isLoggedIn = true;
 // console.log(character, age, isLoggedIn);
 
-// arrays
-
+//// arrays
 // let ninjas: string[] = [];
 
 // function
@@ -58,8 +57,7 @@
 // let result = minus(10, 7);
 // console.log(result);
 
-// type alias
-
+//// type alias
 // type StringOrNum = string | number;
 // type objWithName = { name: string; uid: StringOrNum };
 
