@@ -106,3 +106,5 @@
 
 //     console.log(type.value, tofrom.value, details.value, amount.valueAsNumber);
 // });
+
+// classes
