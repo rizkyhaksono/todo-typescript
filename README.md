@@ -1,6 +1,6 @@
-# Tutorial Typescript
+# Todo App with Typescript
 
-This repository contains a tutorial for Typescript. The tutorial is based on the [The Net Ninja](https://www.youtube.com/playlist?list=PL4cUxeGkcC9gUgr39Q_yD6v-bSyMwKPUI) youtube series.
+This repository contains a Todo App for Typescript. The app is based on the [The Net Ninja](https://www.youtube.com/playlist?list=PL4cUxeGkcC9gUgr39Q_yD6v-bSyMwKPUI) youtube series.
 
 ## Installation
 
