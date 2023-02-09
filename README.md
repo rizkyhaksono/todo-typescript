@@ -10,6 +10,12 @@ To install typescript, you need to install node.js and npm. After that, you can 
 npm install -g typescript
 ```
 
+To update typescript, you can use the following command:
+
+```bash
+npm update -g typescript
+```
+
 ## Usage
 
 To compile a typescript file, you can use the following command:
@@ -18,6 +24,14 @@ To compile a typescript file, you can use the following command:
 tsc <filename>.ts
 ```
 
+To compile a typescript file and watch for changes, you can use the following command:
+
+```bash
+tsc <filename>.ts -w
+```
+
 ## Contributing
+
+-   [rizkyhaksono](https://github.com/rizkyhaksono)
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
