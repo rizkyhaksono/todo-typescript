@@ -37,43 +37,74 @@ form.addEventListener("submit", (e: Event) => {
 //     return { ...obj, uid };
 // };
 
-const addUID = <T extends object>(obj: T) => {
-    let uid = Math.floor(Math.random() * 100);
-    return { ...obj, uid };
-};
+// const addUID = <T extends object>(obj: T) => {
+//     let uid = Math.floor(Math.random() * 100);
+//     return { ...obj, uid };
+// };
 
 // const addUID = <T extends { name: string }>(obj: T) => {
 //     let uid = Math.floor(Math.random() * 100);
 //     return { ...obj, uid };
 // };
 
-let docOne = addUID({ name: "yoshi", age: 40 });
-let docTwo = addUID({ name: "shaun", age: 30 });
+// let docOne = addUID({ name: "yoshi", age: 40 });
+// let docTwo = addUID({ name: "shaun", age: 30 });
 
-console.log(docOne.age);
-console.log(docTwo.name);
+// console.log(docOne.age);
+// console.log(docTwo.name);
 
 // with interfaces
-interface Resource<T> {
-    uid: number;
-    resourceName: string;
-    data: T;
-}
+// interface Resource<T> {
+//     uid: number;
+//     resourceName: string;
+//     data: T;
+// }
 
-const docThree: Resource<object> = {
-    uid: 1,
-    resourceName: "person",
-    data: { name: "shaun" },
-};
+// const docThree: Resource<object> = {
+//     uid: 1,
+//     resourceName: "person",
+//     data: { name: "shaun" },
+// };
 
-const docFour: Resource<object[]> = {
-    uid: 1,
-    resourceName: "shoppingList",
-    // data: ["bread", "milk"],
-    data: [
-        ["sdsd", "fsadfls"],
-        [30, 20],
-    ],
-};
+// const docFour: Resource<object[]> = {
+//     uid: 1,
+//     resourceName: "shoppingList",
+// data: ["bread", "milk"],
+//     data: [
+//         ["sdsd", "fsadfls"],
+//         [30, 20],
+//     ],
+// };
 
-console.log(docThree, docFour);
+// console.log(docThree, docFour);
+
+// enums
+// enum GenreMusik {
+//     POP,
+//     Phonk,
+//     HipHop,
+//     KPop,
+//     Jpop,
+//     DreamPop,
+// }
+
+// interface Resource<T> {
+//     uid: number;
+//     resourceType: GenreMusik;
+//     data: T;
+// }
+
+// const musikSatu: Resource<object> = {
+//     uid: 1,
+//     resourceType: GenreMusik.DreamPop,
+//     data: { title: "The Marias - Over The Moon" },
+// };
+
+// const musikDua: Resource<object> = {
+//     uid: 2,
+//     resourceType: GenreMusik.HipHop,
+//     data: { title: "Metro Booming - Too Many Nights" },
+// };
+
+// console.log(musikSatu);
+// console.log(musikDua);
