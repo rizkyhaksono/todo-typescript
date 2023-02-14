@@ -30,9 +30,15 @@ To compile a typescript file and watch for changes, you can use the following co
 tsc <filename>.ts -w
 ```
 
-## Some Notes
+or if you want to compile all typescript files in a directory, you can use the following command:
 
-If you have a CORS error on your browser console, you can use the live share extension on VS Code to share your code to your friend. Then, your friend can run the code on his/her computer.
+```bash
+tsc -w
+```
+
+## Note Bene
+
+If you want to run on local, you can use extension called Live Server on VSCode.
 
 ## Contributing
 

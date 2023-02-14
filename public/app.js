@@ -13,78 +13,30 @@ const ul = document.querySelector("ul");
 const list = new ListTemplate(ul);
 form.addEventListener("submit", (e) => {
     e.preventDefault();
+    let values;
+    values = [tofrom.value, details.value, amount.valueAsNumber];
     let doc;
     if (type.value === "invoice") {
-        doc = new Invoice(tofrom.value, details.value, amount.valueAsNumber);
+        doc = new Invoice(...values);
         console.log(doc);
     }
     else {
-        doc = new Payment(tofrom.value, details.value, amount.valueAsNumber);
+        doc = new Payment(...values);
         console.log(doc);
     }
     list.render(doc, type.value, "end");
 });
-// generics
-// const addUID = (obj: object) => {
-//     let uid = Math.floor(Math.random() * 100);
-//     return { ...obj, uid };
-// };
-// const addUID = <T extends object>(obj: T) => {
-//     let uid = Math.floor(Math.random() * 100);
-//     return { ...obj, uid };
-// };
-// const addUID = <T extends { name: string }>(obj: T) => {
-//     let uid = Math.floor(Math.random() * 100);
-//     return { ...obj, uid };
-// };
-// let docOne = addUID({ name: "yoshi", age: 40 });
-// let docTwo = addUID({ name: "shaun", age: 30 });
-// console.log(docOne.age);
-// console.log(docTwo.name);
-// with interfaces
-// interface Resource<T> {
-//     uid: number;
-//     resourceName: string;
-//     data: T;
-// }
-// const docThree: Resource<object> = {
-//     uid: 1,
-//     resourceName: "person",
-//     data: { name: "shaun" },
-// };
-// const docFour: Resource<object[]> = {
-//     uid: 1,
-//     resourceName: "shoppingList",
-// data: ["bread", "milk"],
-//     data: [
-//         ["sdsd", "fsadfls"],
-//         [30, 20],
-//     ],
-// };
-// console.log(docThree, docFour);
-// enums
-// enum GenreMusik {
-//     POP,
-//     Phonk,
-//     HipHop,
-//     KPop,
-//     Jpop,
-//     DreamPop,
-// }
-// interface Resource<T> {
-//     uid: number;
-//     resourceType: GenreMusik;
-//     data: T;
-// }
-// const musikSatu: Resource<object> = {
-//     uid: 1,
-//     resourceType: GenreMusik.DreamPop,
-//     data: { title: "The Marias - Over The Moon" },
-// };
-// const musikDua: Resource<object> = {
-//     uid: 2,
-//     resourceType: GenreMusik.HipHop,
-//     data: { title: "Metro Booming - Too Many Nights" },
-// };
-// console.log(musikSatu);
-// console.log(musikDua);
+// tuples
+let arr = ["ryu", 25, true];
+arr[0] = false;
+arr[1] = "yoshi";
+// arr = [30, false, "yoshi"];
+console.log(arr);
+let tup = ["ryu", 25, true];
+// tup[0] = false;
+tup[0] = "ken";
+console.log(tup);
+let student;
+//student = [23564, 'chun-li'];
+student = ["chun-li", 23564];
+console.log(student);
