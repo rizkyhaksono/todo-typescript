@@ -49,6 +49,10 @@ const docThree = {
 const docFour = {
     uid: 1,
     resourceName: "shoppingList",
-    data: ["bread", "milk"],
+    // data: ["bread", "milk"],
+    data: [
+        ["sdsd", "fsadfls"],
+        [30, 20],
+    ],
 };
 console.log(docThree, docFour);

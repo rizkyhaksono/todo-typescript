@@ -66,10 +66,14 @@ const docThree: Resource<object> = {
     data: { name: "shaun" },
 };
 
-const docFour: Resource<string[]> = {
+const docFour: Resource<object[]> = {
     uid: 1,
     resourceName: "shoppingList",
-    data: ["bread", "milk"],
+    // data: ["bread", "milk"],
+    data: [
+        ["sdsd", "fsadfls"],
+        [30, 20],
+    ],
 };
 
 console.log(docThree, docFour);
