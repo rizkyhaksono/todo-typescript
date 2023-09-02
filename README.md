@@ -40,8 +40,4 @@ tsc -w
 
 If you want to run on local, you can use extension called Live Server on VSCode.
 
-## Contributing
-
--   [rizkyhaksono](https://github.com/rizkyhaksono)
-
 [LICENSE](https://github.com/rizkyhaksono/todo-typescript/blob/main/README.md)
